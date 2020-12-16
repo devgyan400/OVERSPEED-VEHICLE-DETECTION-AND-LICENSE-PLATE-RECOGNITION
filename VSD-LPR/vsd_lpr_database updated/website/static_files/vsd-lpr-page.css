@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+html {
+    height: 100%;
+    background: white;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    background-attachment: fixed;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+/**********ALL NAVBAR CSS**************************************/
+
+.navBar {
+    height: 84px;
+    background-color: #1b262c;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+.logoBlock {
+    float: left;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    padding-left: 20px;
+}
+
+.logoIcon {
+    height: 64px;
+}
+
+.headName {
+    padding-left: 14px;
+    font-family: 'Monoton', cursive;
+    font-size: 28px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+}
+
+
+/*********CONTENT*********************/
+.container {
+    width: 100vw;
+    height: 100vh;
+    color: #FFFFFF;
+    overflow: hidden;
+    border-radius: 0px;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: #2c373d;
+    display: table;
+    color: #FFFFFF;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.header div {
+    width: 200px;
+    text-align: center;
+    height: 60px;
+    display: table-cell;
+    vertical-align: middle;
+
+}
+
+.resultSet {
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    background-color: #FFFFFF;
+    color: #333333;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.entry {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    display: table;
+}
+
+.entry div {
+    width: 200px;
+    text-align: center;
+    height: 60px;
+    display: table-cell;
+    vertical-align: middle;
+    border: 1px solid #EEEEEE;
+}
+
+.viewButton{
+    text-decoration: none;
+}
+
+.imageLink a div{
+    width: 80px;
+    height: 30px;
+    background-color: #DDDDDD;
+    color: #666666;
+    text-decoration: none;
+    border-radius: 15px;
+    font-size: 14px;
+}
+
+.imageLink a div:hover{
+    background-color: #2c373d;
+    color: #FFFFFF;
+}
+
+/**********************MOBILE************************************/
+@media only screen and (orientation: portrait) {
+    body {
+        font-size: 3.6vw;
+    }
+
+    .navBar {
+        height: 12vh;
+        box-shadow: 0vw 0vw 4vw 0vw #00000030;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .logoBlock {
+        float: left;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 100%;
+        padding-left: 6vw;
+    }
+
+    .logoIcon {
+        height: 6vh;
+    }
+
+    .headName {
+        padding-left: 3.2vw;
+        font-size: 3.2vh;
+    }
+
+    .container {
+        margin: 0vh 0vh 0vh 0vh;
+        width: 100vw;
+        height: 100vh;
+        overflow-x: scroll;
+        border-radius: 0px;
+
+    }
+
+    .header {
+        display: flex;
+        width: 210vw;
+        height: 8vh;
+        flex-direction: row;
+        display: table;
+    }
+
+    .header div {
+
+        width: 30vw;
+        height: 100%;
+        text-align: center;
+        display: table-cell;
+        vertical-align: middle;
+
+    }
+
+    .resultSet {
+        width: 210vw;
+        overflow-y: scroll;
+        border: none;
+    }
+
+    .entry {
+        height: 8vh;
+        display: table;
+    }
+
+    .entry div {
+        width: 30vw;
+        text-align: center;
+        height: 100%;
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    .imageLink a div{
+        width: 16vw;
+        height: 4vh;
+        border-radius: 2vh;
+        font-size: 1.5vh;
+    }
+}
+
+/************************SCROLL BAR******************************/
+@media only screen and (min-width: 577px) {
+    .resultSet::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    .resultSet::-webkit-scrollbar-track {
+        background: rgba(0, 0, 0, 0.00);
+    }
+
+    .resultSet::-webkit-scrollbar-thumb {
+        background: #DDDDDD;
+    }
+
+    .resultSet::-webkit-scrollbar-thumb:hover {
+        background: #505050;
+    }
+
+    .resultSet::-webkit-scrollbar-corner {
+        background: rgba(0, 0, 0, 0.00);
+    }
+}
